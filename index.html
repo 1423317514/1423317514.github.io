@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./font/iconfont.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="searchBox">
+      <div class="input-box">
+        <input type="text" class="input" placeholder="输入音乐名/歌手名" />
+        <span class="search">搜</span>
+      </div>
+    </div>
+    <div class="music-top">
+      <table id="musicTable">
+        <colgroup>
+          <col span="1" class="col1" />
+          <col span="1" class="col2" />
+          <col span="1" class="col3" />
+        </colgroup>
+        <tr>
+          <th>歌曲</th>
+          <th>歌手</th>
+          <th>操作</th>
+        </tr>
+      </table>
+      <audio autoplay></audio>
+    </div>
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lz-string/1.4.4/lz-string.min.js"></script>
+  <script src="./js/index.js"></script>
+</html>

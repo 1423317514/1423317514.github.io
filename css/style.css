@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background: #333;
+}
+
+.searchBox {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.input-box {
+    position: relative;
+}
+
+.input {
+    margin: 20px 0;
+    width: 160px;
+    height: 38px;
+    font-size: 14px;
+    padding: 0 40px 0 20px;
+    border: 1px solid #eee;
+    border-radius: 40px;
+    transition: width 0.5s;
+    transition-delay: 0.1s;
+}
+
+.input-box span {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    color: #969696;
+    text-align: center;
+    background: #222;
+    border-radius: 50%;
+    font-size: 15px;
+    cursor: pointer;
+    position: absolute;
+    top: 24px;
+    right: 5px;
+}
+
+.input:focus {
+    width: 280px;
+    outline: none;
+    box-shadow: none;
+    transition-delay: 0;
+}
+
+.input:focus + span {
+    background: pink;
+    color: #fff;
+}
+
+.music-top {
+    width: 688px;
+    margin: 0 auto;
+}
+
+table {
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+    margin-bottom: 28px;
+}
+
+table tr th {
+    height: 60px;
+}
+
+table tr td {
+    height: 60px;
+}
+
+.col1 {
+    background: red;
+}
+
+.col2 {
+    width: 100px;
+}
+
+.col3 {
+    width: 220px;
+}
+
+table tr:nth-of-type(odd) {
+    background-color: #fff;
+}
+
+table tr:nth-of-type(even) {
+    background-color: #f7f7f7;
+}
+
+table tr th {
+    background-color: pink;
+    color: white;
+    font-size: 16px;
+}
+
+.con {
+    height: 40px;
+    position: relative;
+}
+
+.con .txt {
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #999;
+}
+
+.con .title {
+    font-weight: lighter;
+    font-size: 18px;
+    color: #222;
+}
+
+.button {
+    height: 36px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.button i {
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    font-size: 32px;
+    text-align: center;
+    display: inline-block;
+}
+
+.icon-zanting,
+.icon-bofangzhong {
+    transform: rotate(180deg);
+}
+
+.button i.icon-iconfront- {
+    font-size: 38px;
+}
+
+.button i.icon-download {
+    font-size: 35px;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+}
+
+.circular-progress-container {
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    position: relative;
+    display: none;
+    /* 初始隐藏 */
+}
+
+.circular-progress {
+    width: 100%;
+    height: 100%;
+    transform: rotate(-90deg);
+}
+
+.circular-bg {
+    fill: none;
+    stroke: #eee;
+    stroke-width: 2.8;
+}
+
+.circular-bar {
+    fill: none;
+    stroke: pink;
+    stroke-width: 2.8;
+    stroke-linecap: round;
+    stroke-dasharray: 0, 100;
+}
+
+.checkmark {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+}
+
+.checkmark.active {
+    display: block;
+}
+
+.checkmark polyline {
+    fill: none;
+    stroke: green;
+    stroke-width: 2.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.iconfont {
+    cursor: pointer;
+}
+
+.iconfont:hover {
+    color: pink;
+}
+
+.playing-pink {
+    color: pink;
+    /* 粉红色 */
+}
